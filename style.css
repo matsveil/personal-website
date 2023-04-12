@@ -95,13 +95,6 @@ a:visited {
 
 a:hover {
     color: var(--white);
-    animation: wavy-slide 3s linear infinite;
-}
-
-@keyframes wavy-slide {
-	to {
-		margin-left: -51%;
-	}
 }
 
 .highlight {
