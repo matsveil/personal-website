@@ -28,14 +28,82 @@ h1 {
     }
 }
 
+.wave {
+    animation-name: wave-animation;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+.wave:hover {
+    animation-name: wave-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; 
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
+
+li {
+    padding-top: 1%;
+}
+
+
 a:link {
     color: var(--lavender);
+    text-decoration-style: wavy;
+    transition: 400ms;
 }
 
 a:visited {
     color: var(--blue);
 }
 
-#highlight {
+a:hover {
+    color: var(--white);
+    animation: wavy-slide 3s linear infinite;
+}
+
+@keyframes wavy-slide {
+	to {
+		margin-left: -51%;
+	}
+}
+
+.highlight {
     color: var(--gray);
 }
