@@ -1,4 +1,3 @@
-
 :root {
     --black: #000807;
     --white: #fbf9ff;
@@ -7,17 +6,11 @@
     --gray: #A2A3BB;
     background-color: var(--black);
     color: var(--white);
- }
-
- @media only screen and (max-width: 600px) {
-    body {
-        margin: 5%;
-    }
- }
+}
 
 body {
     font-family: 'Inter', sans-serif;
-    margin: 15%;
+    margin: 13%;
 }
 
 h1 {
@@ -28,8 +21,7 @@ h1 {
 a:link {
     color: var(--lavender);
 }
-  
+
 a:visited {
     color: var(--blue);
 }
-
