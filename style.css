@@ -9,9 +9,15 @@
     color: var(--white);
  }
 
+ @media only screen and (max-width: 600px) {
+    body {
+        margin: 5%;
+    }
+ }
+
 body {
     font-family: 'Inter', sans-serif;
-    margin: 10%;
+    margin: 15%;
 }
 
 h1 {
