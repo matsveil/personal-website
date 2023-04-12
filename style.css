@@ -1,0 +1,29 @@
+
+:root {
+    --black: #000807;
+    --white: #fbf9ff;
+    --lavender: #B3B7EE;
+    --blue: #9395D3;
+    --gray: #A2A3BB;
+    background-color: var(--black);
+    color: var(--white);
+ }
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 15%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+a:link {
+    color: var(--lavender);
+}
+  
+a:visited {
+    color: var(--blue);
+}
+
