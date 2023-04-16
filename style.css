@@ -4,12 +4,19 @@
     --lavender: #B3B7EE;
     --blue: #9395D3;
     --gray: #A2A3BB;
-    background-color: var(--black);
-    color: var(--white);
+}
+
+html {
+    cursor: none;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+    font-family: 'Syne', sans-serif;
+}
+
+.main {
     margin: 15%;
 }
 
@@ -18,28 +25,10 @@ h1 {
     font-weight: bold;
 }
 
-@media screen and (max-width: 600px) {
-    body {
-        margin: 5%;
-    }
-
-    h1 {
-        font-size: 3rem;
-    }
-}
-
 .wave {
     animation-name: wave-animation;
     animation-duration: 3s;
     animation-iteration-count: 1;
-    transform-origin: 70% 70%;
-    display: inline-block;
-}
-
-.wave:hover {
-    animation-name: wave-animation;
-    animation-duration: 3s;
-    animation-iteration-count: infinite; 
     transform-origin: 70% 70%;
     display: inline-block;
 }
@@ -84,9 +73,15 @@ li {
 
 
 a:link {
+    cursor: none;
     color: var(--lavender);
     text-decoration-style: wavy;
-    transition: 400ms;
+    transition: 300ms;
+}
+
+a:hover .circle {
+    background-color: transparent;
+    border: 1px solid var(--lavender);
 }
 
 a:visited {
@@ -99,4 +94,29 @@ a:hover {
 
 .highlight {
     color: var(--gray);
+}
+
+.blob {
+    z-index: -1;
+    position: fixed;
+    width: 100rem;
+    height: 100rem;
+    border-radius: 100rem;
+    background: radial-gradient(62.61% 62.61% at 95.23% 6.02%, #160E71 0%, rgba(19, 13, 92, 0.26) 54.71%, rgba(90, 35, 248, 0) 100%), linear-gradient(72.48deg, #EF516D 2.61%, rgba(106, 103, 227, 0) 56.18%), radial-gradient(45.23% 45.23% at 35.11% -11.02%, #7936AE 0%, rgba(121, 54, 174, 0) 100%), radial-gradient(94.51% 124.88% at 94.32% 94.43%, rgba(65, 244, 255, 0.78) 0%, rgba(131, 218, 255, 0.6552) 32.29%, rgba(99, 175, 240, 0.3978) 64.06%, rgba(43, 90, 211, 0) 100%), linear-gradient(313.04deg, #341D65 0.93%, #604AEA 125.68%);
+    background-blend-mode: normal, normal, normal, normal, normal, normal;
+    filter: blur(50px);
+    opacity: 0.5;
+}
+
+.cursor {
+    pointer-events: none;
+    display: none;
+    width: 20px;
+    height: 20px;
+    background-color: var(--lavender);
+    border-radius: 50%;
+    top: -10px;
+    left: -10px;
+    position: fixed;
+    transition: 100ms;
 }
