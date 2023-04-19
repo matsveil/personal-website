@@ -25,6 +25,13 @@ h1 {
     font-weight: bold;
 }
 
+h2 {
+    margin-top: 5%;
+    font-size: 2.6;
+    font-weight: bold;
+    color: var(--gray);
+}
+
 .wave {
     animation-name: wave-animation;
     animation-duration: 3s;
@@ -68,6 +75,7 @@ h1 {
 }
 
 li {
+    list-style-type: ">  ";
     padding-top: 1%;
 }
 
@@ -118,7 +126,6 @@ a:hover {
     top: -10px;
     left: -10px;
     position: fixed;
-    transition: 100ms;
 }
 
 .cursor.hollow {
@@ -128,6 +135,9 @@ a:hover {
     border-width: 2px;
     border-color: var(--lavender);
     background-color: rgba(0, 0, 0, 0);
+    top: -15px;
+    left: -15px;
+    position: fixed;
   }
 
   @media (max-width: 600px) {
