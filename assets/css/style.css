@@ -126,6 +126,7 @@ a:hover {
     top: -10px;
     left: -10px;
     position: fixed;
+    z-index: 999;
 }
 
 .cursor.hollow {
@@ -138,13 +139,54 @@ a:hover {
     top: -15px;
     left: -15px;
     position: fixed;
-  }
+    transition: 100ms;
+}
 
-  @media (max-width: 600px) {
+.squircle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 150px;
+    background: rgba(147, 149, 211, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.3px);
+    -webkit-backdrop-filter: blur(8.3px);
+    --squircle-radius: 40px;
+
+}
+
+.squircle .left {
+    width: 100px;
+
+    padding: 10px;
+}
+
+.squircle .right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 250px;
+    padding: 20px;
+}
+
+.squircle .right h2 {
+    margin-top: 0;
+}
+
+.squircle .right p {
+    margin-bottom: 0;
+}
+
+
+@media (max-width: 600px) {
     .main {
         margin: 5%;
     }
+
     h1 {
         font-size: 2.4rem;
     }
-  }
+}

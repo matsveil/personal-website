@@ -25,21 +25,25 @@
       <li><a href="https://twitter.com/MatsveiL" target="_blank">Twitter</a></li>
       <li><a href="mailto:hello@matsveil.com" target="_blank">Mail</a></li>
     </ul>
-    <!--
       <h2>Projects</h2>
       <div class="squircle">
-        <div class="image-container">
-          <img src="images/100daysofswiftui.jpeg" alt="100 Days of SwiftUI">
+        <img src="assets/images/100daysofswiftui.jpeg" alt="100 Days of SwiftUI" class="left">
+        <div class="right">
+          <h2>Project Name</h2>
+          <p>Project Description</p>
         </div>
-        <div class="text-container">
-          <h2>100 Days of SwiftUI</h2>
-          <p>Description of your project goes here.</p>
-        </div>
+      </div>      
       </div> 
-    -->
     <script src="assets/js/cursor.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="assets/js/float.js"></script>
+    <script>
+      if ("paintWorklet" in CSS) {
+        CSS.paintWorklet.addModule(
+          "https://www.unpkg.com/css-houdini-squircle/squircle.min.js"
+        );
+      }
+    </script>
   </div>
 </body>
 
